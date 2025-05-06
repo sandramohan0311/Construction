@@ -24,9 +24,12 @@
 
     /* Alias Setup */
     "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
+        "paths": {
+          "@/*": [
+            "./src/*"
+          ]
+        }
+
   },
   "include": ["src"]
 }
