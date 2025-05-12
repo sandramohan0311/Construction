@@ -51,7 +51,7 @@ const Header: React.FC = () => {
   );
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-[#F4F5F9]">
+    <header className="sticky top-0 z-50 lg:h-40 h-20 w-full bg-[#F4F5F9]">
       {isMobile ? (
         <div className="flex items-center justify-between px-6 py-4">
           <Link to="/">
@@ -100,7 +100,7 @@ const Header: React.FC = () => {
       {/* Mobile Dropdown Menu */}
       {isMobile && (
         <div
-          className={`flex flex-col items-center gap-4 px-6 pb-4 transition-[max-height,opacity] duration-400 ease-in-out overflow-hidden ${
+          className={`flex flex-col items-center gap-4 px-6 pb-4 transition-[max-height,opacity] duration-400 ease-in-out overflow-hidden bg-[#F4F5F9] ${
             menuOpen ? "h-[calc(100vh-70px)] opacity-100" : "max-h-0 opacity-0"
           }`}
         >
