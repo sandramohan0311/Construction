@@ -1,12 +1,14 @@
 import PublicLayout from "@/layouts/PublicLayout";
-import Home from "@/pages/Home";
 import { Route, Routes } from "react-router-dom";
+import Gallery from "./pages/Gallery";
+import HomePage from "@/pages/HomePage";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<PublicLayout />}>
-        <Route index element={<Home />} />
+        <Route index element={<HomePage />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Route>
     </Routes>
   );
