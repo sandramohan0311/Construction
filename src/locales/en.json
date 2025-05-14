@@ -23,8 +23,23 @@
   "SegT3": "24/7 Support",
   "SegD3": "Call To +91 7907 304050 \n For Enquiries",
 
-  "login": "Login",
-  "logout": "Logout",
+  "WelS1": "Welcome to Saeed seddiqi construction ",
+  "WelS2": "Saeed seddiqi construction Co. LLC| Low Cost | Stunning Design | Enduring Trust ",
+  "WelS3": "Established in the year 2018, Saeed seddiqi construction Co. LLC, Is A One Of The Top Player In The Category Builders & Developers In Kerala.",
+  "WelS4": "Learn More ",
+
+  "ProDtl1N": "109",
+  "ProDtl1D": "Expert Workers",
+  "ProDtl2N": "485",
+  "ProDtl2D": "Happy Clients",
+  "ProDtl3N": "54",
+  "ProDtl3D": "Completed Projects",
+  "ProDtl4N": "485",
+  "ProDtl4D": "Running Projects",
+
+  "SHdg": "Our Services",
+  "SSubHdg": "We Provide Services",
+
   "S1T": "Decoration Design & Implementation",
   "S1D": "Saeed Seddiqi is a leading interior design and decoration company in the UAE, providing creative, high-quality solutions for residential, commercial, and hospitality spaces. We specialize in large-scale interior design and implementation, transforming ordinary environments into elegant, functional, and inspiring spaces. With a deep understanding of aesthetics, structures, and client needs, we seamlessly and precisely bring your vision to life. Our commitment to quality service is at the core of our work. From initial concept development to material selection, construction, and finishing, our expert team ensures attention to detail, timely delivery, and high-level craftsmanship. Whether it's a luxury home interior, a contemporary office, a showroom, or a complete renovation, we approach every project with creativity, professionalism, and a passion for excellence. At Saeed Seddiqi, we value collaboration and transparency. We work closely with clients, architects, and consultants to deliver bespoke design solutions that reflect personality, brand identity, and functionality. We use the finest materials and the latest technologies to ensure long-lasting, stunning results. Based in the UAE, we proudly serve a diverse client base and continue to build a reputation for quality, integrity, and innovation in every project we complete.",
   "S2T": "Building construction",
@@ -46,7 +61,24 @@
   "S10T": "Swimming Pool Installation",
   "S10D": "Saeed Seddiqi Company is a leading provider of professional pool installation services in the UAE, renowned for delivering high-quality, customized pool solutions to clients. From design to execution, we offer comprehensive pool construction services, including excavation, plumbing, tiling, waterproofing, and finishing. With a focus on quality service, our team of skilled engineers and technicians ensures that each pool is constructed to the highest standards of safety and durability. We use advanced technologies and high-quality materials to achieve stunning, long-lasting results, tailored to our clients' desires and site requirements. Whether you need a luxury villa pool, a commercial pool, or a unique water feature, Saeed Seddiqi Company offers efficient, reliable, and cost-effective solutions. Our commitment to excellence and customer satisfaction has made us a trusted name in the UAE pool construction industry. Let us bring your outdoor vision to life—beautifully and professionally.",
   
-  "Msg": "Welcome to Saeed Seddiqi Construction LLC, a multidisciplinary company specializing in construction, infrastructure development, and interior design. Driven by our unwavering commitment to quality, innovation, and sustainability, we offer integrated solutions tailored to the evolving needs of modern living and working environments.\n\nSupported by a team of skilled engineers, architects, designers, and project managers, we offer a diverse range of services, including:\n\nConstruction: Residential, commercial, and industrial construction projects, executed with precision and care.\n\nInfrastructure Development: Roads, bridges, utilities, and civil infrastructure, designed to global standards of durability and efficiency.\n\nInterior Design and Fit-Out: Custom interiors that combine functionality and aesthetics for homes, offices, hospitality facilities, and retail spaces.\n\nFrom large-scale infrastructure projects to meticulously designed interiors, Saeed Seddiqi Construction LLC is committed to delivering excellence through innovative solutions, efficient project management, and a customer-centric approach. We believe not only in building structures, but also in building long-term partnerships and inspiring environments."
+  "MsdHdg": "Message from",
+  "MsdSubHdg": "Our Chairman & Director",
 
+  "Name": "Saeed Ahmed seddiqi",
+  "Position": "Chairman and director",
 
+  "Msg": "Welcome to Saeed Seddiqi Construction LLC, a multidisciplinary company specializing in construction, infrastructure development, and interior design. Driven by our unwavering commitment to quality, innovation, and sustainability, we offer integrated solutions tailored to the evolving needs of modern living and working environments.\n\nSupported by a team of skilled engineers, architects, designers, and project managers, we offer a diverse range of services, including:\n\nConstruction: Residential, commercial, and industrial construction projects, executed with precision and care.\n\nInfrastructure Development: Roads, bridges, utilities, and civil infrastructure, designed to global standards of durability and efficiency.\n\nInterior Design and Fit-Out: Custom interiors that combine functionality and aesthetics for homes, offices, hospitality facilities, and retail spaces.\n\nFrom large-scale infrastructure projects to meticulously designed interiors, Saeed Seddiqi Construction LLC is committed to delivering excellence through innovative solutions, efficient project management, and a customer-centric approach. We believe not only in building structures, but also in building long-term partnerships and inspiring environments.",
+
+  "THdg": "Testimonials",
+  "TSubHdg": "Real stories from clients who’ve built success with us",
+
+  "TName": "John Mathews",
+  "TPosition": "Project Director, UrbanRise Developers",
+  "Testimonial": "Working with [Company Name] was a seamless experience. Their attention to detail, timely delivery, and commitment to safety ensured our project exceeded expectations. They’re not just contractors — they’re trusted partners in growth.",
+
+  "Footer": "Preserving and promoting the ancient Indian martial art form of Kalaripayattu through authentic training, cultural events, and educational programs.",
+  "Address": "Office No. 33-308, owned by Bakhit Mohammed Yaqoub - Deira - Al Qusais 2 Office 308 - Al Qusais 2",
+
+  "FooterH1": "Quick Links",
+  "FooterH2": "Contact Us"
 }
