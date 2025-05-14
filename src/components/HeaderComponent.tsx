@@ -1,6 +1,4 @@
 
-import React from "react";
-
 interface HeaderComponentProps {
   HeaderIcon: React.ReactNode;
   HeaderTitle: string;

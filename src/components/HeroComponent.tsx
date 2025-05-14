@@ -17,7 +17,7 @@ const HeroComponent = () => {
             {t("2")}
         </div>
         <div className="absolute z-10 top-72 left-30 h-[40px] w-[160px] bg-white rounded-[20px] flex justify-center items-center">
-            Enquiries
+            {t("3")}
         </div>
     </div>
   )
