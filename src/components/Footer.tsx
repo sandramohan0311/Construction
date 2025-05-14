@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "@/assets/icon/con_logo.png";
 // import Threads from "@/assets/icons/threads.svg";
 import { Facebook, Instagram, Youtube } from "lucide-react";

@@ -1,4 +1,3 @@
-import React from 'react'
 import ChairmanImg from '@/assets/image/said.png';
 import Quotes from '@/assets/icon/quotes.svg'
 import MessagePopUp from '@/components/MessagePopUp';

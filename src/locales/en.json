@@ -1,6 +1,28 @@
 {
   "1": "We Are Professional",
   "2": "For your Dearm Project",
+  "3": "Enquires",
+
+  "H1": "Home ",
+  "H2": "About",
+  "H3": "Service ",
+  "H4": "Gallery",
+  "H5": "Project ",
+  "H6": "Contact ",
+
+  "HT1": "Opening Hour",
+  "HD1": "9:00 AM - 5:00 PM",
+  "HT2": "Call Us",
+  "HD2": "+91 7907 30 40 50",
+  "HT3": "Email Us",
+
+  "SegT1": "Expert Worker",
+  "SegD1": "Skills And Experience Through Practice And Education In Particular Field",
+  "SegT2": "Quality Work",
+  "SegD2": "Quality Work Is The Service / Task One Completes Successfully Within The Estimated Time",
+  "SegT3": "24/7 Support",
+  "SegD3": "Call To +91 7907 304050 \n For Enquiries",
+
   "login": "Login",
   "logout": "Logout",
   "S1T": "Decoration Design & Implementation",

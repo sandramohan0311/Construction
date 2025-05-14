@@ -6,8 +6,12 @@ import { FiMenu, FiX } from "react-icons/fi";
 import HeaderComponent from "./HeaderComponent";
 import { CalendarClock, MailCheck, PhoneCall } from "lucide-react";
 import LanguageSelector from "./LanguageSelector";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Header: React.FC = () => {
+
+  const { t } = useLanguage();
+
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 1024);
   const location = useLocation();
@@ -27,12 +31,12 @@ const Header: React.FC = () => {
   const navLinks = (
     <>
       {[
-        { path: "/", label: "Home" },
-        { path: "#about", label: "About" },
-        { path: "/gallery", label: "Gallery" },
-        { path: "#", label: "Service" },
-        { path: "#", label: "Project" },
-        { path: "#", label: "Contact" },
+        { path: "/", label: t("H1") },
+        { path: "#about", label: t("H2") },
+        { path: "/gallery", label: t("H3") },
+        { path: "#", label: t("H4") },
+        { path: "#", label: t("H5") },
+        { path: "#", label: t("H6") },
       ].map(({ path, label }) => (
         <Link
           key={path}
@@ -71,17 +75,17 @@ const Header: React.FC = () => {
             <div className="h-auto w-auto flex ml-10">
               <HeaderComponent
                 HeaderIcon={<CalendarClock />}
-                HeaderTitle="Opening Hour"
-                HeaderDescription="9:00 AM - 5:00 PM"
+                HeaderTitle={t("HT1")}
+                HeaderDescription={t("HD1")}
               />
               <HeaderComponent
                 HeaderIcon={<PhoneCall />}
-                HeaderTitle="Call Us"
-                HeaderDescription="+91 7907 30 40 50"
+                HeaderTitle={t("HT2")}
+                HeaderDescription={t("HD2")}
               />
               <HeaderComponent
                 HeaderIcon={<MailCheck />}
-                HeaderTitle="Email Us"
+                HeaderTitle={t("HT3")}
                 HeaderDescription="eracreatiodevelopers@gmail.com"
               />
             </div>
@@ -111,17 +115,17 @@ const Header: React.FC = () => {
           <div className="h-auto w-auto flex flex-col gap-2">
             <HeaderComponent
               HeaderIcon={<CalendarClock />}
-              HeaderTitle="Opening Hour"
-              HeaderDescription="9:00 AM - 5:00 PM"
+              HeaderTitle={t("HT1")}
+              HeaderDescription={t("HD1")}
             />
             <HeaderComponent
               HeaderIcon={<PhoneCall />}
-              HeaderTitle="Call Us"
-              HeaderDescription="+91 7907 30 40 50"
+              HeaderTitle={t("HT2")}
+              HeaderDescription={t("HD2")}
             />
             <HeaderComponent
               HeaderIcon={<MailCheck />}
-              HeaderTitle="Email Us"
+              HeaderTitle={t("HT3")}
               HeaderDescription="eracreatiodevelopers@gmail.com"
             />
           </div>

@@ -2,19 +2,18 @@ import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { useLanguage } from "../contexts/LanguageContext"; // adjust path as needed
 
-const LanguageSelector = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
+const LanguageSelector: React.FC = () => {
+  const [showDropdown, setShowDropdown] = useState<boolean>(false);
   const { language, setLanguage } = useLanguage();
 
-  const toggleDropdown = () => setShowDropdown(!showDropdown);
+  const toggleDropdown = (): void => setShowDropdown((prev) => !prev);
 
-  const selectLanguage = (lang: "en" | "ar") => {
+  const selectLanguage = (lang: "en" | "ar"): void => {
     setLanguage(lang);
     setShowDropdown(false);
   };
 
-  // Determine flag image source
-  const flagSrc = language === "en" ? "/en.png" : "/ar.png"; // assuming images are in public/
+  const flagSrc: string = language === "en" ? "/en.png" : "/ar.png"; // assuming public folder
 
   return (
     <div className="relative">
