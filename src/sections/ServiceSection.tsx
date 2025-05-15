@@ -12,7 +12,7 @@ import PoolImg from '@/assets/image/Pool.png'
 
 
 const ServiceSection = () => {
-  const { t } = useLanguage();
+  const { t } = useLanguage(); 
   return (
     <div className='h-auto w-full px-10  bg-[#E0DFE4] pb-10'>
         <p className='lg:text-xl text-sm text-black font-medium w-full flex justify-center items-center'>{t("SHdg")}</p>

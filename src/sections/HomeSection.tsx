@@ -10,7 +10,7 @@ import HeroComponent from "@/components/HeroComponent";
 
 const HomeSection = () => {
   return (
-    <div className="relative h-[calc(100vh-10rem)] w-full">
+    <div className="relative h-[calc(100vh-10rem)] w-full" dir="ltr">
       <Swiper
         style={
           {
