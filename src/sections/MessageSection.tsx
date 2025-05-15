@@ -12,7 +12,7 @@ const MessageSection = () => {
             <p className='lg:text-4xl text-2xl text-black font-medium w-full flex justify-center items-center'>{t("MsdSubHdg")}</p>
             <div className="h-auto w-full flex lg:flex-row lg:justify-center lg:items-center flex-col-reverse gap-6 mt-5">
                 <div className="h-auto flex flex-col">
-                    <img className='lg:h-96 h-auto' src={ChairmanImg} alt="" />
+                    <img className='lg:h-96 ' src={ChairmanImg} alt="" />
                     <p className='text-xl text-black font-bold w-full flex justify-center items-center'>{t("Name")}</p>
                     <p className='text-md text-[#7B7B7B] font-semibold w-full flex justify-center items-center'>{t("Position")}</p>
                 </div>

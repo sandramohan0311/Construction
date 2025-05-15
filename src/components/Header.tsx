@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 // import { cn } from "@/lib/utils.js";
-import Logo from "@/assets/icon/con_logo.png";
+
 import { FiMenu, FiX } from "react-icons/fi";
 import HeaderComponent from "./HeaderComponent";
 import { CalendarClock, MailCheck, PhoneCall } from "lucide-react";
 import LanguageSelector from "./LanguageSelector";
 import { useLanguage } from "@/contexts/LanguageContext";
 
+import EngLogo from "@/assets/image/eng_logo.png";
+import AraLogo from "@/assets/image/ara_logo.png";
+
 const Header: React.FC = () => {
 
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 1024);
@@ -33,8 +36,8 @@ const Header: React.FC = () => {
       {[
         { path: "/", label: t("H1") },
         { path: "#about", label: t("H2") },
-        { path: "/gallery", label: t("H3") },
-        { path: "#", label: t("H4") },
+        { path: "#", label: t("H3") },
+        { path: "/gallery", label: t("H4") },
         { path: "#", label: t("H5") },
         { path: "#", label: t("H6") },
       ].map(({ path, label }) => (
@@ -59,7 +62,11 @@ const Header: React.FC = () => {
       {isMobile ? (
         <div className="flex items-center justify-between px-6 py-4">
           <Link to="/">
-            <img className="h-12 w-auto" src={Logo} alt="Logo" />
+             <img
+              className="h-12 w-auto"
+              src={language === 'ar' ? AraLogo : EngLogo}
+              alt="Logo"
+            />
           </Link>
           <button onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
@@ -70,7 +77,11 @@ const Header: React.FC = () => {
           {/* Top Row with Logo and Contact Info */}
           <div className="flex items-center justify-center py-4">
             <Link to="/">
-              <img className="h-12 w-auto" src={Logo} alt="Logo" />
+               <img
+                className="h-12 w-auto"
+                src={language === 'ar' ? AraLogo : EngLogo}
+                alt="Logo"
+              />
             </Link>
             <div className="h-auto w-auto flex ml-10">
               <HeaderComponent
