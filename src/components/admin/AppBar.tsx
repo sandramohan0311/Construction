@@ -30,7 +30,7 @@ const items: NavItem[] = [
   
   {
     title: "Gallery",
-    url: "/gallery",
+    url: "/admin/gallery",
     icon: Image,
   },
 ];

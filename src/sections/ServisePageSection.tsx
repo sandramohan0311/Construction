@@ -11,13 +11,13 @@ interface GalleryItem {
   image: string;
 }
 
-// interface GallerySectionProps {
+// interface ServiceSectionProps {
 //   ServiceTitle: string;
 //   ServicDescription: string;
 //   ServiceImage: string;
 // }
 
-const GallerySection: React.FC = () => { 
+const ServicePageSection: React.FC = () => { 
   // Example gallery items (you can replace this with data fetched from an API or passed as props)
   const galleryItems: GalleryItem[] = [
     {
@@ -65,4 +65,4 @@ const GallerySection: React.FC = () => {
   );
 };
 
-export default GallerySection;
+export default ServicePageSection;
