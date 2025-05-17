@@ -8,8 +8,8 @@ const WelcomeSection = () => {
    const { t } = useLanguage();
 
   return (
-    <div className='lg:h-[400px] h-auto w-full flex lg:flex-row lg:justify-center flex-col  '>
-        <div className="h-full lg:w-[500px] w-full px-5 lg:px-0 bg-[#E0DFE4] flex items-end">
+    <div className='lg:h-[400px] h-auto w-full flex lg:flex-row lg:justify-center flex-col px-5 lg:px-0  '>
+        <div className="h-full lg:w-[500px] w-full bg-[#E0DFE4] flex items-end">
             <img className='h-full w-full object-cover' src={Com_image1} alt="" />
         </div>
         <div className="h-full lg:w-[500px] w-full px-3 py-10 flex flex-col gap-3">
