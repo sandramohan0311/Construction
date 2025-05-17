@@ -11,11 +11,7 @@ import {
   SidebarMenuItem,
 } from "../ui/sidebar";
 import {
-  Newspaper,
   Image,
-  Quote,
-  Calendar,
-  CalendarCheck,
   LogOut,
   LucideIcon,
 } from "lucide-react";
@@ -31,30 +27,11 @@ type NavItem = {
 };
 
 const items: NavItem[] = [
-  {
-    title: "News",
-    url: "/admin/news",
-    icon: Newspaper,
-  },
+  
   {
     title: "Gallery",
-    url: "/admin/gallery",
+    url: "/gallery",
     icon: Image,
-  },
-  {
-    title: "Quotation",
-    url: "/admin/quotation",
-    icon: Quote,
-  },
-  {
-    title: "Pre Events",
-    url: "/admin/preevents",
-    icon: Calendar,
-  },
-  {
-    title: "Events",
-    url: "/admin/events",
-    icon: CalendarCheck,
   },
 ];
 

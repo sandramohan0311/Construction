@@ -7,7 +7,7 @@ const HeroComponent = () => {
 
   return (
     <div
-        className="lg:w-full lg:h-full relative bg-no-repeat bg-cover h-full  w-auto "
+        className="lg:w-full lg:h-full relative bg-no-repeat bg-cover bg-center h-[400px]  w-full "
         style={{ backgroundImage: `url(${Com_image1})` }}
         >
         <div className="absolute z-10 top-36 left-30 text-sm text-[#b9b9b9]">
