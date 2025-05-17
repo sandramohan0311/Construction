@@ -12,7 +12,6 @@ import EngLogo from "@/assets/image/eng_logo.png";
 import AraLogo from "@/assets/image/ara_logo.png";
 
 const Header: React.FC = () => {
-
   const { t, language } = useLanguage();
 
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -28,28 +27,52 @@ const Header: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Only scroll to top for full page navigation (not hash links)
+    if (!location.hash) {
+      window.scrollTo(0, 0);
+    }
   }, [location]);
+
+  // Handle smooth scrolling to sections
+  const handleNavigation = (path: string) => {
+    setMenuOpen(false);
+    
+    // Check if the path is a hash link
+    if (path.startsWith('#')) {
+      // Get the element to scroll to
+      const element = document.getElementById(path.substring(1));
+      if (element) {
+        // Scroll to the element with smooth behavior
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Regular navigation
+      // The Link component will handle this
+    }
+  };
 
   const navLinks = (
     <>
       {[
         { path: "/", label: t("H1") },
         { path: "#about", label: t("H2") },
-        { path: "#", label: t("H3") },
-        { path: "/gallery", label: t("H4") },
-        { path: "#", label: t("H5") },
-        { path: "#", label: t("H6") },
+        { path: "#service", label: t("H3") },
+        { path: "#message", label: t("H4") },
       ].map(({ path, label }) => (
         <Link
           key={path}
           to={path}
           className={`transition-all duration-300 transform ${
-            location.pathname === path
+            location.pathname === path && !path.startsWith('#')
               ? "text-black-500 underline"
               : "hover:scale-110"
           }`}
-          onClick={() => setMenuOpen(false)}
+          onClick={(e) => {
+            if (path.startsWith('#')) {
+              e.preventDefault();
+              handleNavigation(path);
+            }
+          }}
         >
           {label}
         </Link>

@@ -7,7 +7,7 @@ const WorkHighlightSection = () => {
   // const { t } = useLanguage();
 
   return (
-    <div className='lg:h-screen h-auto w-full flex flex-col justify-center items-center'>
+    <div id='about' className='lg:h-screen h-auto w-full flex flex-col justify-center items-center'>
         <WelcomeSection/>
         {/* <div className="h-auto w-full flex lg:flex-row lg:justify-evenly flex-col items-center lg:mt-20">
             <ProjectDetails ProjectNumber={t("ProDtl1N")} ProjectTitle={t("ProDtl1D")}/>
