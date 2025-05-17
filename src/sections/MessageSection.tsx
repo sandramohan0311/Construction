@@ -3,10 +3,13 @@ import Quotes from '@/assets/icon/quotes.svg'
 import MessagePopUp from '@/components/MessagePopUp';
 import { useLanguage } from '@/contexts/LanguageContext';
 
+
 const MessageSection = () => {
     const { t } = useLanguage();
+   
+
   return (
-    <div className='h-auto w-full flex flex-col '>
+    <div id="message" className='h-auto w-full flex flex-col '>
         <div className="h-auto w-full  p-10">
             <p className='text-xl text-black font-medium w-full flex justify-center items-center'>{t("MsdHdg")}</p>
             <p className='lg:text-4xl text-2xl text-black font-medium w-full flex justify-center items-center'>{t("MsdSubHdg")}</p>

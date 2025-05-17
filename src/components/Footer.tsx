@@ -77,11 +77,10 @@ const Footer: React.FC = () => {
           <p className="text-5 font-bold text-[#000000]">{t("FooterH1")}</p>
           <div className="h-auto w-auto flex flex-col gap-3 text-4 font-regular text-[#000000]">
             <Link to="/" className="transition transform hover:scale-110 duration-300">{t("H1")}</Link>
-            <Link to="#" className="transition transform hover:scale-110 duration-300">{t("H2")}</Link>
-            <Link to="/gallery" className="transition transform hover:scale-110 duration-300">{t("H3")}</Link>
-            <Link to="#" className="transition transform hover:scale-110 duration-300">{t("H4")}</Link>
-            <Link to="/project" className="transition transform hover:scale-110 duration-300">{t("H5")}</Link>
-            <Link to="contact" className="transition transform hover:scale-110 duration-300">{t("H6")}</Link>
+            <Link to="#about" className="transition transform hover:scale-110 duration-300">{t("H2")}</Link>
+            <Link to="#service" className="transition transform hover:scale-110 duration-300">{t("H3")}</Link>
+            <Link to="#message" className="transition transform hover:scale-110 duration-300">{t("H4")}</Link>
+
 
           </div>
         </div>

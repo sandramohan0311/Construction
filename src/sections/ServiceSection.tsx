@@ -1,20 +1,21 @@
 import ServiceComponent from "@/components/ServiceComponent"
 import { useLanguage } from "@/contexts/LanguageContext";
-import DummyImg from '@/assets/image/buildingimg1.png'
-import BuildingImg from '@/assets/image/Building_com.png'
-import AdsImg from '@/assets/image/Ads.png'
-import SteelImg from '@/assets/image/Steel.png'
-import RoadImg from '@/assets/image/Road.png'
+import DummyImg from '@/assets/image/con1.jpg'
+import BuildingImg from '@/assets/image/con_2.jpg'
+import AdsImg from '@/assets/image/con_bill.png'
+import SteelImg from '@/assets/image/con_steel.png'
+import RoadImg from '@/assets/image/con6.jpg'
 import TrafficImg from '@/assets/image/Traffic.png'
-import ElectronicsImg from '@/assets/image/Electronics.png'
-import ElectricalImg from '@/assets/image/Electrical.png'
+import ElectronicsImg from '@/assets/image/con7.jpg'
+import MaintainImg from '@/assets/image/con9.jpg'
+import ElectricalImg from '@/assets/image/con_8.jpg'
 import PoolImg from '@/assets/image/Pool.png'
 
 
 const ServiceSection = () => {
   const { t } = useLanguage(); 
   return (
-    <div className='h-auto w-full px-10  bg-[#E0DFE4] pb-10'>
+    <div id="service" className='h-auto w-full px-10  bg-[#E0DFE4] pb-10'>
         <p className='lg:text-xl text-sm text-black font-medium w-full flex justify-center items-center'>{t("SHdg")}</p>
         <p className='lg:text-4xl text-2xl text-black font-medium w-full flex justify-center items-center'>{t("SSubHdg")}</p>
         <div className="h-auto w-full flex flex-col gap-5 mt-5 ">
@@ -78,7 +79,7 @@ const ServiceSection = () => {
               <ServiceComponent 
                 ServiceTitle={t("S9T")}
                 ServicDescription={t("S9D")}
-                ServiceImage={ElectronicsImg}/>
+                ServiceImage={MaintainImg}/>
             </div>
             <div className="h-auto lg:w-1/3 w-full">
               <ServiceComponent 
