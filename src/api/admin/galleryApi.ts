@@ -7,6 +7,11 @@ interface GalleryData {
   // add other fields if your gallery has more properties
 }
 
+const getGallery = async (): Promise<GalleryData> => {
+  const response = await apiClient.get(`/gallery`);
+  return response.data;
+};
+
 const addGallery = async (formDataObj: FormData): Promise<void> => {
   await apiClient.post("/gallery", formDataObj);
 };
@@ -35,4 +40,5 @@ export {
   deleteGallery,
   getGalleryById,
   editGalleryById,
+  getGallery
 };

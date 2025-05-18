@@ -39,13 +39,10 @@ function GalleryTableCompo(): React.ReactElement{
     isError,
     error,
   } = useQuery<GalleryItem[], Error>({
-    queryKey: ["fetch_gallery"],
-    queryFn: async () => {
-        const response = await fetchAllGallery(1, 100);
-        return response.data; // assuming response.data is GalleryItem[]
-        }
+  queryKey: ["fetch_gallery"],
+  queryFn: () => fetchAllGallery(1, 100),
+});
 
-  });
 
   const { trash } = useGalleryAction();
 

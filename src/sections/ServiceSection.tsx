@@ -10,6 +10,8 @@ import ElectronicsImg from '@/assets/image/con7.jpg'
 import MaintainImg from '@/assets/image/con9.jpg'
 import ElectricalImg from '@/assets/image/con_8.jpg'
 import PoolImg from '@/assets/image/Pool.png'
+import { Link } from "react-router-dom";
+
 
 
 const ServiceSection = () => {
@@ -21,71 +23,92 @@ const ServiceSection = () => {
         <div className="h-auto w-full flex flex-col gap-5 mt-5 ">
           <div className="h-auto w-full flex lg:flex-row flex-col gap-5 ">
             <div className="h-auto lg:w-2/3 w-full">
-              <ServiceComponent 
-                ServiceTitle={t("S1T")}
-                ServicDescription={t("S1D")}
-                ServiceImage={DummyImg}/>
+              <Link to="/services/decoration">
+                <ServiceComponent 
+                  ServiceTitle={t("S1T")}
+                  ServicDescription={t("S1D")}
+                  ServiceImage={DummyImg}
+                />
+              </Link>
             </div>
             <div className="h-auto lg:w-1/3 w-full">
-              <ServiceComponent 
-                ServiceTitle={t("S2T")}
-                ServicDescription={t("S2D")}
-                ServiceImage={BuildingImg}/>
+              <Link to="/services/building">
+                <ServiceComponent 
+                  ServiceTitle={t("S2T")}
+                  ServicDescription={t("S2D")}
+                  ServiceImage={BuildingImg}/>
+              </Link>
             </div> 
           </div>
           <div className="h-auto w-full flex lg:flex-row flex-col gap-5 ">
             <div className="h-auto lg:w-1/3 w-full">
-              <ServiceComponent 
-                ServiceTitle={t("S3T")}
-                ServicDescription={t("S3D")}
-                ServiceImage={AdsImg}/>
+              <Link to="/services/traffic">
+                <ServiceComponent 
+                  ServiceTitle={t("S3T")}
+                  ServicDescription={t("S3D")}
+                  ServiceImage={AdsImg}/>
+              </Link>
             </div>
             <div className="h-auto lg:w-2/3 w-full">
-              <ServiceComponent 
-                ServiceTitle={t("S4T")}
-                ServicDescription={t("S4D")}
-                ServiceImage={SteelImg}/>
+              <Link to="/services/billboards">
+                <ServiceComponent 
+                  ServiceTitle={t("S4T")}
+                  ServicDescription={t("S4D")}
+                  ServiceImage={SteelImg}/>
+              </Link>
             </div> 
           </div>
           <div className="h-auto w-full flex lg:flex-row flex-col gap-5 ">
             <div className="h-auto lg:w-2/3 w-full">
-              <ServiceComponent 
-                ServiceTitle={t("S5T")}
-                ServicDescription={t("S5D")}
-                ServiceImage={RoadImg}/>
+              <Link to="/services/steel">
+                <ServiceComponent 
+                  ServiceTitle={t("S5T")}
+                  ServicDescription={t("S5D")}
+                  ServiceImage={RoadImg}/>
+              </Link>
             </div>
             <div className="h-auto lg:w-1/3 w-full">
-              <ServiceComponent 
-                ServiceTitle={t("S6T")}
-                ServicDescription={t("S6D")}
-                ServiceImage={TrafficImg}/>
+              <Link to="/services/steel">
+                <ServiceComponent 
+                  ServiceTitle={t("S6T")}
+                  ServicDescription={t("S6D")}
+                  ServiceImage={TrafficImg}/>
+              </Link>
             </div> 
           </div>
           <div className="h-auto w-full flex lg:flex-row flex-col gap-5 ">
             <div className="h-auto lg:w-1/3 w-full">
-              <ServiceComponent 
-                ServiceTitle={t("S7T")}
-                ServicDescription={t("S7D")}
-                ServiceImage={ElectronicsImg}/>
+              <Link to="/services/electromechanical">
+                <ServiceComponent 
+                  ServiceTitle={t("S7T")}
+                  ServicDescription={t("S7D")}
+                  ServiceImage={ElectronicsImg}/>
+              </Link>
             </div>
             <div className="h-auto lg:w-2/3 w-full">
-              <ServiceComponent 
-                ServiceTitle={t("S8T")}
-                ServicDescription={t("S8D")}
-                ServiceImage={ElectricalImg}/>
+              <Link to="/services/electrical">
+                <ServiceComponent 
+                  ServiceTitle={t("S8T")}
+                  ServicDescription={t("S8D")}
+                  ServiceImage={ElectricalImg}/>
+              </Link>
             </div> 
           </div><div className="h-auto w-full flex lg:flex-row flex-col gap-5 ">
             <div className="h-auto lg:w-2/3 w-full">
-              <ServiceComponent 
-                ServiceTitle={t("S9T")}
-                ServicDescription={t("S9D")}
-                ServiceImage={MaintainImg}/>
+              <Link to="/services/maintenance">
+                <ServiceComponent 
+                  ServiceTitle={t("S9T")}
+                  ServicDescription={t("S9D")}
+                  ServiceImage={MaintainImg}/>
+              </Link>
             </div>
             <div className="h-auto lg:w-1/3 w-full">
-              <ServiceComponent 
-                ServiceTitle={t("S10T")}
-                ServicDescription={t("S10D")}
-                ServiceImage={PoolImg}/>
+              <Link to="/services/swimmingpools">
+                <ServiceComponent 
+                  ServiceTitle={t("S10T")}
+                  ServicDescription={t("S10D")}
+                  ServiceImage={PoolImg}/>
+              </Link>
             </div> 
           </div>
         </div>
