@@ -57,8 +57,9 @@ const ServicePageSection: React.FC<ServicePageSectionProps> = ({
 
       {isLoading && <p>Loading gallery...</p>}
       {isError && <p>Error: {error?.message}</p>}
-
+      <p className="text-black font-bold text-lg ">Gallery</p>
       <div className="h-auto xl:w-[1300px] w-full flex flex-wrap gap-2">
+        
         {galleryItems?.map((item) => (
           <GalleryCard
             key={item.id}

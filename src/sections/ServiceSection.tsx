@@ -42,7 +42,7 @@ const ServiceSection = () => {
           </div>
           <div className="h-auto w-full flex lg:flex-row flex-col gap-5 ">
             <div className="h-auto lg:w-1/3 w-full">
-              <Link to="/services/traffic">
+              <Link to="/services/billboards">
                 <ServiceComponent 
                   ServiceTitle={t("S3T")}
                   ServicDescription={t("S3D")}
@@ -50,7 +50,7 @@ const ServiceSection = () => {
               </Link>
             </div>
             <div className="h-auto lg:w-2/3 w-full">
-              <Link to="/services/billboards">
+              <Link to="/services/steel">
                 <ServiceComponent 
                   ServiceTitle={t("S4T")}
                   ServicDescription={t("S4D")}
@@ -60,7 +60,7 @@ const ServiceSection = () => {
           </div>
           <div className="h-auto w-full flex lg:flex-row flex-col gap-5 ">
             <div className="h-auto lg:w-2/3 w-full">
-              <Link to="/services/steel">
+              <Link to="/services/road">
                 <ServiceComponent 
                   ServiceTitle={t("S5T")}
                   ServicDescription={t("S5D")}
@@ -68,7 +68,7 @@ const ServiceSection = () => {
               </Link>
             </div>
             <div className="h-auto lg:w-1/3 w-full">
-              <Link to="/services/steel">
+              <Link to="/services/traffic">
                 <ServiceComponent 
                   ServiceTitle={t("S6T")}
                   ServicDescription={t("S6D")}

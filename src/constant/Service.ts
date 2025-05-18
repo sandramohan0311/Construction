@@ -37,12 +37,6 @@ export const servicesData = [
     galleryType: "building",
   },
   {
-    titleKey: "S6T",  // note: your Arabic uses different keys for traffic (S6T) vs original service.ts Traffic Management (title: Traffic Management)
-    descriptionKey: "S6D",
-    image: TrafficImg,
-    galleryType: "traffic",
-  },
-  {
     titleKey: "S3T",
     descriptionKey: "S3D",
     image: BillboardImg,
@@ -59,6 +53,12 @@ export const servicesData = [
     descriptionKey: "S5D",
     image: RoadImg,
     galleryType: "road",
+  },
+  {
+    titleKey: "S6T",  // note: your Arabic uses different keys for traffic (S6T) vs original service.ts Traffic Management (title: Traffic Management)
+    descriptionKey: "S6D",
+    image: TrafficImg,
+    galleryType: "traffic",
   },
   {
     titleKey: "S7T",
