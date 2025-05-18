@@ -28,6 +28,7 @@ const typeOptions = [
   { id: "road", label: "Road Contracting" },
   { id: "electromechanical", label: "Electromechanical Equipment Installation and Maintenance" },
   { id: "electrical", label: "Electrical Fitting Contracting" },
+  { id: "maintenance", label: "Building Maintenance and Service" },
   { id: "swimmingpools", label: "Swimming Pools Installation Works" },
 ];
 

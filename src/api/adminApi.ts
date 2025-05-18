@@ -3,27 +3,20 @@ import apiClient from '@/lib/apiClient';
 interface GalleryItem {
   id: number;
   title: string;
-  imageUrl: string;
+  image: string;
   type: string;
   // add other gallery item fields here as needed
 }
 
-interface FetchGalleryResponse {
-  data: GalleryItem[];
-  total: number;
-  page: number;
-  limit: number;
-  // add other response metadata if any
-}
 
 const fetchAllGallery = async (
   page: number = 1,
   limit: number = 10
-): Promise<FetchGalleryResponse> => {
-  const response = await apiClient.get<FetchGalleryResponse>('/gallery', {
+): Promise<GalleryItem[]> => {
+  const response = await apiClient.get('/gallery', {
     params: { page, limit },
   });
-  return response.data;
+  return response.data; // assuming this is correct structure
 };
 
 export { fetchAllGallery };

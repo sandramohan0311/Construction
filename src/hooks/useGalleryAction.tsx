@@ -5,12 +5,14 @@ import {
 } from '@/api/admin/galleryApi';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 
+type GalleryCreateInput = FormData;
+type GalleryUpdateInput = { id: string | number; formDataObj: FormData };
+type GalleryDeleteInput = string | number;
 
 export const useGalleryAction = () => {
   const queryClient = useQueryClient();
 
-  // Delete Gallery
-  const deleteMutation = useMutation({
+  const deleteMutation = useMutation<void, Error, GalleryDeleteInput>({
     mutationFn: deleteGallery,
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['fetch_gallery'] });
@@ -20,8 +22,7 @@ export const useGalleryAction = () => {
     },
   });
 
-  // Create Gallery
-  const createMutation = useMutation({
+  const createMutation = useMutation<void, Error, GalleryCreateInput>({
     mutationFn: addGallery,
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['fetch_gallery'] });
@@ -31,8 +32,7 @@ export const useGalleryAction = () => {
     },
   });
 
-  // Update Gallery
-  const updateMutation = useMutation({
+  const updateMutation = useMutation<void, Error, GalleryUpdateInput>({
     mutationFn: editGalleryById,
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['fetch_gallery'] });
@@ -43,20 +43,19 @@ export const useGalleryAction = () => {
   });
 
   return {
-    // Delete
     trash: deleteMutation.mutate,
-    isTrashing: deleteMutation.isLoading,
+    deleteError: deleteMutation.error,
+    deleting: deleteMutation.status === 'pending',
+    deleted: deleteMutation.status === 'success',
 
-    // Create
     create: createMutation.mutate,
-    creating: createMutation.isLoading,
     createError: createMutation.error,
-    created: createMutation.isSuccess,
+    creating: createMutation.status === 'pending',
+    created: createMutation.status === 'success',
 
-    // Update
     update: updateMutation.mutate,
-    updating: updateMutation.isLoading,
     updateError: updateMutation.error,
-    updated: updateMutation.isSuccess,
+    updating: updateMutation.status === 'pending',
+    updated: updateMutation.status === 'success',
   };
 };
