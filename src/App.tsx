@@ -20,7 +20,8 @@ function App() {
             </PrivateRoute>
           }
         >
-        <Route path="gallery" element={<GalleryPage />} />
+        <Route index  element={<GalleryPage />} />
+        <Route  path="gallery" element={<GalleryPage />} />
       </Route>
     </Routes>
   );
