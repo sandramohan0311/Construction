@@ -12,15 +12,15 @@ const Footer: React.FC = () => {
     window.location.href = "/?launch=true"; // use href instead of assignment
   };
 
-   const { t, language } = useLanguage();
-  
+  const { t, language } = useLanguage();
+
   return (
     <div className="lg:h-[440px] h-auto w-full flex flex-col justify-center items-center lg:px-20 px-6 bg-[#F4F5F9]">
       <div className="lg:h-[300px] h-auto w-full flex lg:flex-row lg:justify-between flex-col lg:gap-0 gap-4 lg:py-0 py-3">
         <div className="h-full md:w-[320px] flex flex-col gap-3">
           <img
             className="h-[90px]"
-            src={language === 'ar' ? AraLogo : EngLogo}
+            src={language === "ar" ? AraLogo : EngLogo}
             alt="Logo"
           />
           <p className="w-full text-4 text-[#000000] font-normal ">
@@ -76,12 +76,30 @@ const Footer: React.FC = () => {
         <div className="h-full w-auto flex flex-col gap-2">
           <p className="text-5 font-bold text-[#000000]">{t("FooterH1")}</p>
           <div className="h-auto w-auto flex flex-col gap-3 text-4 font-regular text-[#000000]">
-            <Link to="/" className="transition transform hover:scale-110 duration-300">{t("H1")}</Link>
-            <Link to="#about" className="transition transform hover:scale-110 duration-300">{t("H2")}</Link>
-            <Link to="#service" className="transition transform hover:scale-110 duration-300">{t("H3")}</Link>
-            <Link to="#message" className="transition transform hover:scale-110 duration-300">{t("H4")}</Link>
-
-
+            <Link
+              to="/"
+              className="transition transform hover:scale-110 duration-300"
+            >
+              {t("H1")}
+            </Link>
+            <Link
+              to="#about"
+              className="transition transform hover:scale-110 duration-300"
+            >
+              {t("H2")}
+            </Link>
+            <Link
+              to="#service"
+              className="transition transform hover:scale-110 duration-300"
+            >
+              {t("H3")}
+            </Link>
+            <Link
+              to="#message"
+              className="transition transform hover:scale-110 duration-300"
+            >
+              {t("H4")}
+            </Link>
           </div>
         </div>
 
@@ -97,13 +115,14 @@ const Footer: React.FC = () => {
       <div className="lg:h-[42px] h-auto w-full border-t-2 flex lg:flex-row lg:justify-between flex-col items-center gap-6 py-4 text-[#000000] text-3 font-normal mt-10">
         <div className="h-auto">
           <p onClick={resetLaunchExperience} className="cursor-pointer">
-          {t("Copyright")}
+            {t("Copyright")}
           </p>
         </div>
         <div className="h-auto w-auto flex lg:gap-2 gap-3">
           <p>Privacy Policy</p>
-          <p>Terms & Conditions</p>
-          <p>Sitemap</p>
+          <a href="https://altezzai.com" target="_blank">
+            Developed by Altezza
+          </a>
         </div>
       </div>
     </div>
